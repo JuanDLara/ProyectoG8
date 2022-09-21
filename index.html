@@ -6,22 +6,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plataforma Gestion de Notas </title>
     <link rel="stylesheet" href="stilos.css">
-    <link rel="stylesheet" href="<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />">
+    <link rel="stylesheet" href="link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />">
     
 </head>
 <body>
-    <form action="#">
-        <h1> Universidad del Atlantico </h1> 
-        <label>
-            <input type="text" id="username" placeholder="usuario ">
-        </label>
-        <label>
-            <input type="password" id="pass" placeholder="contraseña  ">
-        </label>
-        
-        <a href="#"class="link"> olvido la contraseña </a>
-        <button  id="btn"> Ingresar</button>
-    </form>
+
+    <div class="section-container" id="homePage">
+        This is the home page
+    </div>
+
+    <div id="loginContainer">
+        <form action="#">
+            <h1> Universidad del Atlantico </h1> 
+            <label>
+                <input type="text" id="username" placeholder="usuario ">
+            </label>
+            <label>
+                <input type="password" id="pass" placeholder="contraseña  ">
+            </label>
+            
+            <a href="#"class="link"> olvido la contraseña </a>
+            <button  id="btn"> Ingresar</button>
+        </form>
+    </div>
+   
+    <div class="section-container" id="studentHome">
+        StudentHome
+        <div class="menu">
+            <div class="sidebar" id="sidebar">
+                <div class="userdata">
+                    <img src="users.png" alt="TEACHER" height="80px" width="80px"></img>
+                    <span>STUDENTS</span>
+                </div>
+                <button class="list-buttons" id="assignedCourse">Cursos Asignados</button>
+                <button class="list-buttons">Datos Personales</button>
+                
+            </div>
+            
+            <div class="dropdown" id="TeacherCoursesDropdown">
+                <button class="dropdown-button">Mis Cursos</button>
+            </div>
+            
+            <div>
+                <button class="dropdown-button">Visualizar Notas</button>
+                <button class="dropdown-button">Entregar Actividad</button>
+            </div>
+            
+        </div>
+   
+   <div class="section-container" id="adminHome">
+        AdminHome
+        <div class="menu">
+            <div class="sidebar" id="sidebar">
+                <div class="userdata">
+                    <img src="user.png" alt="foto de usuario" height="80px" width="80px"></img>
+                    <span>ADMIN</span>
+                </div>
+                <button class="list-buttons" id="createCourse">Crear curso</button>
+                <button class="list-buttons">Crear usuario</button>
+                <button class="list-buttons">Cerrar sesión</button>
+            </div>
+            <div class="dropdown" id="adminCoursesDropdown">
+                <button class="dropdown-button">Asignar curso</button>
+                <button class="dropdown-button">Editar curso</button>
+                <button class="dropdown-button">Eliminar curso</button>
+            </div>
+        </div>
+    </div>
+    <div class="section-container" id="TeacherHome">
+        TeacherHome
+        <div class="menu">
+            <div class="sidebar" id="sidebar">
+                <div class="userdata">
+                    <img src="USER2.png" alt="TEACHER" height="80px" width="80px"></img>
+                    <span>TEACHER</span>
+                </div>
+                <button class="list-buttons" id="createActivity">Datos Personales</button>
+                <button class="list-buttons">Cursos Asignados</button>
+                
+            </div>
+            
+            <div class="dropdown" id="TeacherCoursesDropdown">
+                <button class="dropdown-button">Crear actividad</button>
+                <button class="dropdown-button">Calificar actividad</button>
+                <button class="dropdown-button">Eliminar actividad</button>
+            </div>
+            
+        </div>
+    </div>
+   
 
     <script src="main.js"></script>
 </body>
