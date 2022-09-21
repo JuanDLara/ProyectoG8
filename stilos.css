@@ -1,0 +1,68 @@
+/*bootstrap  
+
+    https://cdnjs.com/libraries/font-awesome
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+h1{
+    margin: auto;
+    padding: 10px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(208,116,0);
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background:linear-gradient(white)
+}
+form{
+    display: flex;
+    flex-direction: column;
+    background: white;
+    text-align: center;
+    padding: 20px 25px;
+    box-shadow: 0 5px 10px rgba(7, 6, 6, 0.6);
+
+}
+.titulo{
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+label{
+    margin-bottom: 20px;
+}
+
+form label input{
+    outline: none;
+    border: none;
+    color: #252525;
+    border-bottom: 1px solid red;
+    padding: 5px 5px;
+    font-size: 17px;
+}
+
+.link{
+    color: black;
+    margin-bottom: 10px;
+}
+
+#btn{
+    color: rgb(115, 36, 36);
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 20px;
+    background: rgb(178, 177, 177);
+
+}
